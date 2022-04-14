@@ -31,7 +31,7 @@ class plgSearchDoc_Indexer extends JPlugin
 	function onContentSearchAreas()
 	{
 		static $areas = array(
-    		'doc_indexer' => 'Doc indexer'
+    		'doc_indexer' => 'Journals'
     	);
     	return $areas;
 	}
@@ -50,7 +50,7 @@ class plgSearchDoc_Indexer extends JPlugin
     	if ($text == '') {
     		return array();
     	}
-    	$section 	= JText::_( 'Doc Indexer' );
+    	$section 	= JText::_( 'PDF Files' );
     	$wheres 	= array();
     	switch ($phrase)
     	{
